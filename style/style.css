@@ -1,0 +1,385 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10vh;
+}
+    
+/* HEADER */
+.cabecera{
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+}
+
+.divLogo{
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    height: 8vh;
+    margin: auto;
+}
+
+.logo{
+    padding-left: 1vw;
+    width: 7vw;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logoKitty{
+    height: 10vh;
+    display: flex;
+    margin: auto;
+    padding-top: 5vh;
+}
+
+.cabeceraLista{
+    height: 15vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+a:hover{
+    color: black;
+}
+
+.color{
+    color: rgb(63, 63, 63);
+}
+/* FIN DE HEADER */
+
+/* FOOTER */
+.footer{
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 12vh;
+}
+
+.sectionFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.logoFooter{
+    width:5vh;
+    margin-top: 3vh;
+    margin-right: 4vh;
+    transition: all 1s;
+}
+
+.logoFooter:hover{
+    transform: rotate(15deg);
+}
+
+.pFooter{
+    color:grey;
+    font-family: 'Poppins', sans-serif;
+    font-size: 70%;
+    margin-left: 2vh;
+}
+/* FIN FOOTER */
+
+/* INICIO */
+.bienvenida{
+    height: 15vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5vh;
+}
+/* FIN INICIO */
+
+/* PRODUCTOS */
+.sectionimagen{
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+}
+
+.productosSection{
+    width: 100%;
+}
+
+.productosTitulo{
+    text-align: center;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    font-family: 'Staatliches', cursive;
+    font-size: 30px;
+}
+
+.productosDiv{
+    text-align: center;
+}
+
+.productosSubtitulo{
+    text-align: center;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    margin-bottom: 15vh;
+    line-height: 3.5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: larger;
+}
+
+.galeria{
+    width: 100%;
+    padding-bottom: 500px;
+}
+
+.classRopa{
+    height: 70vh;
+    box-shadow: 0px 0px 10px black;
+    position: absolute;
+    margin-left: 240px;
+}
+
+#ropaDos{
+    transition: all 1.5s;
+}
+
+#ropaDos:hover{
+    transform: translate(450px);
+}
+
+.sectionPropa{
+    margin-left: 35vh;
+    margin-top: 2vh;
+}
+
+.pRopa{
+    font-family: 'Staatliches', cursive;
+    font-size: 72px;
+}
+/* FIN PRODUCTOS */
+
+/* CONTÁCTANOS */
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:auto;
+    padding-bottom: 5vh;
+}
+
+.container .card{
+    width: 330px;
+    height: 400px;
+    margin: 20px;
+    text-align: center;
+}
+
+.container .card img{
+    width: 150px;
+    height: 150px;
+}
+
+.container .card h4{
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 16px;
+    font-weight: 300;
+    padding-top: 4vh;
+    font-family: 'Lato', sans-serif;
+}
+/* FIN CONTÁCTANOS */
+
+/* ENCONTRANOS */
+.sectionIframe{
+    margin-bottom: 120px;
+    text-align: center;
+}
+
+.iframe{
+    box-shadow: 0px 0px 15px black;
+}
+/* FIN ENCONTRANOS */
+
+/* ACERCA DE */
+.sectionInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 18vh;
+    margin-top: 5vh;
+    margin-bottom: 20vh;
+    position: relative;
+}
+
+.info{
+    font-family: 'Staatliches', cursive;
+    font-weight: 550;
+    font-size: 40px;
+}
+
+.infoP{
+    margin-top: 2vh;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.infoh2{
+    font-family: 'Staatliches', cursive;
+    margin-top: 3vh;
+    font-weight: 550;
+}
+
+.infoh3{
+    margin-top: 2vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.kittyCorazon{
+    position: absolute;
+    left: 110%;
+    top: 15%;
+    width: 60vh;
+}
+/* FIN DE ACERCA DE */
+
+@media (min-width: 1920px) {
+    .logo{
+        padding-left: 2vw;
+        width: 8vw;
+    }
+    .cabeceraLista {
+        height: 15vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        font-family: 'Lato', sans-serif;
+        font-size: 25px;
+    }
+    .productosTitulo {
+        text-align: center;
+        margin-top: 10vh;
+        margin-bottom: 5vh;
+        font-family: 'Staatliches', cursive;
+        font-size: 40px;
+    }
+    .productosSubtitulo {
+        text-align: center;
+        margin-left: 35vw;
+        margin-right: 35vw;
+        margin-bottom: 15vh;
+        line-height: 3.5vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 25px;
+    }
+    .galeria{
+        width: 100%;
+        padding-bottom: 800px;
+    }
+    .classRopa{
+        height: 70vh;
+        box-shadow: 0px 0px 10px black;
+        position: absolute;
+        margin-left: 250px;
+    }
+    #ropaDos{
+        transition: all 1.5s;
+    }
+    #ropaDos:hover{
+        transform: translate(750px);
+    }
+    .sectionPropa {
+        margin-left: 23vh;
+        margin-bottom: 40px;
+    }
+    .container .card img{
+        width: 200px;
+        height: 200px;
+    }
+    .container .card h4{
+        font-weight: 600;
+        font-family: 'Lato', sans-serif;
+        font-size: 22px;
+    }
+    .container .card p{
+        padding: 0 1rem;
+        font-size: 20px;
+        font-weight: 16px;
+        padding-top: 4vh;
+        font-family: 'Lato', sans-serif;
+    }
+    .info{
+        font-family: 'Staatliches', cursive;
+        font-weight: 550;
+        font-size: 60px;
+    }
+    
+    .infoP{
+        margin-top: 2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    
+    .infoh2{
+        font-family: 'Staatliches', cursive;
+        margin-top: 3vh;
+        font-weight: 550;
+        font-size: 30px;
+    }
+    
+    .infoh3{
+        margin-top: 2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    .pFooter {
+        color: grey;
+        font-family: 'Poppins', sans-serif;
+        font-size: 120%;
+        margin-left: 2vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .divLogo{
+        background-color: rgb(240, 240, 240);
+        width: 100%;
+        height: 8vh;
+        margin: auto;
+        display: none;
+    }
+    .logoKitty{
+        height: 5vh;
+        display: flex;
+        margin: auto;
+        padding-top: 5vh;
+    }
+
+}
