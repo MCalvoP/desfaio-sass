@@ -10,94 +10,105 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
     <title>Nuestra colección</title>
 </head>
 <body>
     <!-- Header -->
     <header class="cabecera">
-        <div class="divLogo">
-        <a href="../index.html"><img class="logo" src="../images/Nike-Logo.png" alt="Logo de nike"></a>
-        </div>
-        <img class="logoKitty" src="../images/hello-kitty-nike.png" alt="Logo de nike kitty">
-        <nav class="menu">
-            <ul class="cabeceraLista">
-                <li><a class="color" href="../index.html">INICIO</a></li>
-                <li><a class="color" href="productos.html">PRODUCTOS</a></li>
-                <li><a class="color" href="contactos.html">CONTÁCTANOS</a>
-                <li><a class="color" href="ubicacion.html">ENCONTRANOS</a></li>
-                <li><a class="color" href="acercade.html">ACERCA DE</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"> <img class="logo" src="/images/Nike-Logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="../index.html">Inicio</a>
+                  <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                  <a class="nav-link" href="contactos.html">Contactanos</a>
+                  <a class="nav-link" href="ubicacion.html">Encontranos</a>
+                  <a class="nav-link" href="acercade.html">Acerca de</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <!-- Fin header -->
 
+    <section>
+        <img class="logoKitty" src="/images/hello-kitty-nike.png" alt="Logo de nike kitty">
+    </section>
+
     <!-- Imagen de presentacion -->
-    <section class="sectionimagen">
+    <section class="sectionImagen">
         <img src="../images/hello-kitty-nike-fleek.jpg" alt="">
     </section>
 
     <!-- Bienvenida a la seccion productos -->
     <section class="productosSection">
-        <p class="productosTitulo">Colección de ropa</>
+        <p class="productosTitulo">Colección de ropa</p>
         <div class="productosDiv">
         <p class="productosSubtitulo">Adéntrate en el mundo superadorable de Hello Kitty con esta colección de ropa clásica y divertida que incluye sudaderas con capucha, pantalones y partes de arriba.</p>
         </div>
     </section>
 
     <!-- Comienza la galeria de productos -->
-    <section class="galeria" data-aos="fade-right">
-        <div >
-        <img class="classRopa" src="../images/remera-kitty-white-trasera.png" alt="">
-        <img class="classRopa" id="ropaDos" src="../images/remera-kitty-white-frontal.png" alt="">
+
+    <section class="galeria">
+        <div  data-aos="fade-right">
+        <img class="remeraBlanca" data-aos="fade-right" src="/images/remera-kitty-white-frontal.png" alt="">
+        <img class="remeraBlancaTrasera" id="ropaDos" src="/images/remera-kitty-white-trasera.png" alt="">
         </div>
     </section>
 
-    <section class="sectionPropa">
-        <p class="pRopa">Camiseta Air</p>
+    <section class="sectionPRemerablanca">
+        <p class="pRemerablanca">Camiseta Air</p>
     </section>
 
-    <section class="galeria" data-aos="fade-right">
-        <div>
-        <img class="classRopa" src="../images/remera-kitty-trasera.png" alt="">
-        <img class="classRopa" id="ropaDos" src="../images/remera-kitty-frontal.png" alt="">
+    <section class="galeria">
+        <div  data-aos="fade-right">
+        <img class="remeraKitty" src="/images/remera-kitty-frontal.png" alt="">
+        <img class="remeraKittyTrasera" id="ropaDos" src="/images/remera-kitty-trasera.png" alt="">
         </div>
     </section>
 
-    <section class="sectionPropa">
-        <p class="pRopa">Camiseta</p>
+    <section class="sectionPRemerakitty">
+        <p class="pRemerakitty">Camiseta</p>
     </section>
 
-    <section class="galeria" data-aos="fade-right">
-        <div>
-        <img class="classRopa" src="../images/buzo-kitty trasero.png" alt="">
-        <img class="classRopa" id="ropaDos" src="../images/buzo-kitty frontal.png" alt="">
+    <section class="galeria">
+        <div  data-aos="fade-right">
+        <img class="buzoKitty" src="/images/buzo-kitty frontal.png" alt="">
+        <img class="buzoKittyTrasera" id="ropaDos" src="/images/buzo-kitty trasero.png" alt="">
         </div>
     </section>
 
-    <section class="sectionPropa">
-        <p class="pRopa">Buzo con capucha</p>
+    <section class="sectionPBuzokitty">
+        <p class="pBuzokitty">Buzo con capucha</p>
     </section>
 
-    <section class="galeria" data-aos="fade-right">
-        <div>
-        <img class="classRopa" src="../images/pantalon-nike-trasero.png" alt="">
-        <img class="classRopa" id="ropaDos" src="../images/pantalon-nike-frontal.png" alt="">
+    <section class="galeria">
+        <div  data-aos="fade-right">
+        <img class="pantalonKitty" src="/images/pantalon-nike-frontal.png" alt="">
+        <img class="pantalonKittyTrasera" id="ropaDos" src="/images/pantalon-nike-trasero.png" alt="">
         </div>
     </section>
 
-    <section class="sectionPropa">
-        <p class="pRopa">Pantalón</p>
+    <section class="sectionPpantalonkitty">
+        <p class="pPantalonkitty">Pantalón</p>
     </section>
 
-    <section class="galeria" data-aos="fade-right">
-        <div>
-        <img class="classRopa" src="../images/zapatillas-kitty-trasera.webp" alt="">
-        <img class="classRopa" id="ropaDos" src="../images/zapatillas-kitty.webp" alt="">
+    <section class="galeria">
+        <div  data-aos="fade-right">
+        <img class="zapatillasKitty" src="/images/zapatillas-kitty.webp" alt="">
+        <img class="zapatillasKittyTrasera" id="ropaDos" src="/images/zapatillas-kitty-trasera.webp" alt="">
         </div>
     </section>
 
-    <section class="sectionPropa">
-        <p class="pRopa">Sneakers</p>
+    <section class="sectionPzapatillaskitty">
+        <p class="pZapatillaskitty">Sneakers</p>
     </section>
 
     <!-- Productos -->
@@ -121,5 +132,6 @@
   <script>
     AOS.init();
   </script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

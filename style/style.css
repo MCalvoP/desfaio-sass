@@ -13,19 +13,13 @@ body{
     background-color: rgb(255, 255, 255);
     margin-bottom: 10vh;
 }
-    
+
 /* HEADER */
 .cabecera{
-    background-color: white;
     width: 100%;
-    height: 40vh;
-}
-
-.divLogo{
-    background-color: rgb(240, 240, 240);
-    width: 100%;
-    height: 8vh;
-    margin: auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 }
 
 .logo{
@@ -43,18 +37,12 @@ a{
 }
 
 .logoKitty{
-    height: 10vh;
+    height: 20vh;
     display: flex;
     margin: auto;
+    margin-top: 70px;
     padding-top: 5vh;
-}
-
-.cabeceraLista{
-    height: 15vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-family: 'Lato', sans-serif;
+    padding-bottom:5vh;
 }
 
 a:hover{
@@ -63,6 +51,10 @@ a:hover{
 
 .color{
     color: rgb(63, 63, 63);
+}
+
+.generalImageTwo{
+    display: none;
 }
 /* FIN DE HEADER */
 
@@ -106,12 +98,12 @@ a:hover{
     display: flex;
     justify-content: center;
     text-align: center;
-    padding-top: 5vh;
+    margin-top: 10vh;
 }
 /* FIN INICIO */
 
 /* PRODUCTOS */
-.sectionimagen{
+.sectionImagen{
     display: flex;
     justify-content: center;
     height: 55vh;
@@ -145,14 +137,8 @@ a:hover{
 
 .galeria{
     width: 100%;
-    padding-bottom: 500px;
-}
-
-.classRopa{
-    height: 70vh;
-    box-shadow: 0px 0px 10px black;
-    position: absolute;
-    margin-left: 240px;
+    display: flex;
+    justify-content:baseline;
 }
 
 #ropaDos{
@@ -163,39 +149,66 @@ a:hover{
     transform: translate(450px);
 }
 
-.sectionPropa{
-    margin-left: 35vh;
-    margin-top: 2vh;
+.sectionPRemerablanca{
+    margin-left: 39vh;
+    margin-top: 2vh
 }
 
-.pRopa{
+.pRemerablanca, .pRemerakitty, .pBuzokitty, .pPantalonkitty, .pZapatillaskitty{
     font-family: 'Staatliches', cursive;
     font-size: 72px;
 }
+
+.remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+    height: 70vh;
+    margin-left: 15rem;
+    position: absolute;
+    box-shadow: 0 0 5px black;
+}
+
+.remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+    height: 70vh;
+    position: relative;
+    margin-left: 15rem;
+    box-shadow: 0 0 5px black;
+}
+
+.sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
+    margin-left: 39vh;
+    margin-top: 2vh;
+}
+
+.sectionPzapatillaskitty{
+    margin-left: 39vh;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+}
+
 /* FIN PRODUCTOS */
 
 /* CONTÁCTANOS */
 .container{
     width: 100%;
     max-width: 1200px;
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin:auto;
-    padding-bottom: 5vh;
 }
 
 .container .card{
     width: 330px;
-    height: 400px;
+    height: 350px;
     margin: 20px;
     text-align: center;
 }
 
 .container .card img{
+    margin: auto;
     width: 150px;
     height: 150px;
+    
 }
 
 .container .card h4{
@@ -230,7 +243,6 @@ a:hover{
     flex-direction: column;
     width: 50%;
     margin-left: 18vh;
-    margin-top: 5vh;
     margin-bottom: 20vh;
     position: relative;
 }
@@ -299,29 +311,23 @@ a:hover{
         font-family: 'Open Sans', sans-serif;
         font-size: 25px;
     }
-    .galeria{
-        width: 100%;
-        padding-bottom: 800px;
-    }
-    .classRopa{
-        height: 70vh;
-        box-shadow: 0px 0px 10px black;
-        position: absolute;
-        margin-left: 250px;
-    }
     #ropaDos{
         transition: all 1.5s;
     }
     #ropaDos:hover{
         transform: translate(750px);
     }
-    .sectionPropa {
-        margin-left: 23vh;
-        margin-bottom: 40px;
+    .sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
+        margin-left: 25vh;
+        margin-top: 2vh;
     }
-    .container .card img{
-        width: 200px;
-        height: 200px;
+    .sectionPzapatillaskitty{
+        margin-left: 25vh;
+        margin-top: 2vh;
+        margin-bottom: 15vh;
+    }
+    .container .card{
+        height: 450px;
     }
     .container .card h4{
         font-weight: 600;
@@ -346,14 +352,12 @@ a:hover{
         font-family: 'Open Sans', sans-serif;
         font-size: 20px;
     }
-    
     .infoh2{
         font-family: 'Staatliches', cursive;
         margin-top: 3vh;
         font-weight: 550;
         font-size: 30px;
     }
-    
     .infoh3{
         margin-top: 2vh;
         font-family: 'Open Sans', sans-serif;
@@ -368,18 +372,81 @@ a:hover{
 }
 
 @media (max-width: 480px) {
-    .divLogo{
-        background-color: rgb(240, 240, 240);
-        width: 100%;
-        height: 8vh;
-        margin: auto;
-        display: none;
+    .logo{
+        padding-left: 1vw;
+        width: 20vw;
+    }
+    .logoFooter{
+        width:2vh;
+        margin-top: 5vh;
+        margin-right: 2vh;
+        transition: all 1s;
+    }
+    .pFooter{
+        color:grey;
+        font-family: 'Poppins', sans-serif;
+        font-size: 55%;
+        margin-left: 1vh;
     }
     .logoKitty{
-        height: 5vh;
+        height: 15vh;
         display: flex;
         margin: auto;
-        padding-top: 5vh;
+        margin-top: 70px;
     }
-
+    .generalImageOne{
+        display: none;
+    }
+    .generalImageTwo{
+        display: flex;
+        width: 72%;
+        height: 20rem;
+    }
+    /* Productos */
+    .sectionImagen{
+        display: none;
+    }
+    .productosTitulo{
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        font-family: 'Staatliches', cursive;
+        font-size: 30px;
+    }
+    .productosSubtitulo{
+        text-align: center;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-bottom: 15vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+    .pRemerablanca, .pRemerakitty, .pBuzokitty, .pPantalonkitty, .pZapatillaskitty{
+        font-family: 'Staatliches', cursive;
+        font-size: 50px;
+    }
+    .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+        height: 50vh;
+        margin-left: 2rem;
+        position: absolute;
+        box-shadow: 0 0 5px black;
+    }
+    
+    .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+        height: 50vh;
+        position: relative;
+        margin-left: 2rem;
+        box-shadow: 0 0 5px black;
+    }
+    
+    .sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
+        margin-left: 5vh;
+        margin-top: 2vh;
+    }
+    
+    .sectionPzapatillaskitty{
+        margin-left: 5vh;
+        margin-top: 2vh;
+        margin-bottom: 15vh;
+    }
 }

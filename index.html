@@ -1,38 +1,52 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Lato:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
     <title>Nike x Kitty</title>
-</head>
+    
+  </head>
+</html>
 <body>
 
     <!-- Header -->
     <header class="cabecera">
-        <div class="divLogo">
-        <a href="index.html"><img class="logo" src="images/Nike-Logo.png" alt="Logo de nike"></a>
-        </div>
-        <img class="logoKitty" src="images/hello-kitty-nike.png" alt="Logo de nike kitty">
-        <nav class="menu">
-            <ul class="cabeceraLista">
-                <li><a class="color" href="index.html">INICIO</a></li>
-                <li><a class="color" href="pages/productos.html">PRODUCTOS</a></li>
-                <li><a class="color" href="pages/contactos.html">CONTÁCTANOS</a>
-                <li><a class="color" href="pages/ubicacion.html">ENCONTRANOS</a></li>
-                <li><a class="color" href="pages/acercade.html">ACERCA DE</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"> <img class="logo" src="images/Nike-Logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                  <a class="nav-link" href="pages/productos.html">Productos</a>
+                  <a class="nav-link" href="pages/contactos.html">Contactanos</a>
+                  <a class="nav-link" href="pages/ubicacion.html">Encontranos</a>
+                  <a class="nav-link" href="pages/acercade.html">Acerca de</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
     </header>
     <!-- Fin header -->
     
+    <section>
+        <img class="logoKitty" src="/images/hello-kitty-nike.png" alt="Logo de nike kitty">
+    </section>
+
     <!-- Imagen general del merchandising -->
     <section  class="bienvenida" data-aos="zoom-in">
-        <img src="images/kitty-merch.jpeg" alt="Merch de kitty">
+        <img class="generalImageOne" src="images/kitty-merch.jpeg" alt="Merch de kitty">
+        <img class="generalImageTwo" src="images/Captura.JPG" alt="Hello Kitty">
     </section>
     <!-- Fin imagen -->
 
@@ -58,5 +72,6 @@
     <script>
       AOS.init();
     </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
