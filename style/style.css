@@ -449,4 +449,25 @@ a:hover{
         margin-top: 2vh;
         margin-bottom: 15vh;
     }
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:auto;
+        margin-bottom: 4rem;
+    }
+    .sectionInfo{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        margin-left: 10px;
+        
+    }
+    .kittyCorazon{
+        display: none;
+    }
 }
