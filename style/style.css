@@ -457,15 +457,15 @@ a:hover{
         flex-wrap: wrap;
         justify-content: center;
         margin:auto;
-        margin-bottom: 4rem;
+        margin-bottom: 5rem;
     }
     .sectionInfo{
         display: flex;
         flex-direction: column;
         width: 95%;
         margin: auto;
-        margin-left: 10px;
-        
+        margin-left: 1rem;
+        margin-bottom: 6rem;
     }
     .kittyCorazon{
         display: none;
