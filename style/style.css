@@ -298,6 +298,7 @@ a:hover{
 }
 /* FIN DE ACERCA DE */
 
+/* Responsive pc high resolution */
 @media (min-width: 1920px) {
     .logo{
         padding-left: 2vw;
@@ -389,7 +390,9 @@ a:hover{
         margin-left: 2vh;
     }
 }
+/* Fin responsive high resolution */
 
+/* Responsive celular */
 @media (max-width: 480px) {
     .logo{
         padding-left: 1vw;
@@ -421,7 +424,6 @@ a:hover{
         width: 72%;
         height: 20rem;
     }
-    /* Productos */
     .sectionImagen{
         display: none;
     }
@@ -490,3 +492,4 @@ a:hover{
         display: none;
     }
 }
+/* Fin responsive celular */
