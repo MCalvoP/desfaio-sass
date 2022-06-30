@@ -442,6 +442,13 @@ a:hover{
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
     }
+    #ropaDos{
+        transition: all 0.7s;
+    }
+    #ropaDos:hover{
+        transform: translate(20px, 20px);
+        opacity: 0;
+    }
     .pRemerablanca, .pRemerakitty, .pBuzokitty, .pPantalonkitty, .pZapatillaskitty{
         font-family: 'Staatliches', cursive;
         font-size: 50px;
