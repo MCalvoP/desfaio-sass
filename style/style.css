@@ -442,6 +442,11 @@ a:hover{
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
     }
+    .galeria{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     #ropaDos{
         transition: all 0.7s;
     }
@@ -454,17 +459,17 @@ a:hover{
         font-size: 50px;
     }
     .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-        height: 50vh;
-        margin-left: 2rem;
+        height: 45vh;
         position: absolute;
-        box-shadow: 0 0 5px black;
+        margin: auto;
+        box-shadow: 0 0 5px rgb(77, 77, 77);
     }
     
     .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
-        height: 50vh;
+        height: 45vh;
         position: relative;
-        margin-left: 2rem;
-        box-shadow: 0 0 5px black;
+        margin: auto;
+        box-shadow: 0 0 5px rgb(77, 77, 77);
     }
     
     .sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
