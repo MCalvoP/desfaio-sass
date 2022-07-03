@@ -129,10 +129,20 @@ a:hover{
     text-align: center;
     margin-left: 35vw;
     margin-right: 35vw;
-    margin-bottom: 15vh;
     line-height: 3.5vh;
     font-family: 'Open Sans', sans-serif;
     font-size: larger;
+}
+
+.productosSubtituloEscritorio{
+    font-family: 'Open Sans', sans-serif;
+    font-size: smaller;
+    color: rgb(151, 151, 151);
+    margin-bottom: 10vh;
+}
+
+.productosSubtituloTactil{
+    display: none;
 }
 
 .galeria{
@@ -149,12 +159,7 @@ a:hover{
     transform: translate(450px);
 }
 
-.sectionPRemerablanca{
-    margin-left: 39vh;
-    margin-top: 2vh
-}
-
-.pRemerablanca, .pRemerakitty, .pBuzokitty, .pPantalonkitty, .pZapatillaskitty{
+.pProductos{
     font-family: 'Staatliches', cursive;
     font-size: 72px;
 }
@@ -173,7 +178,7 @@ a:hover{
     box-shadow: 0 0 5px rgb(77, 77, 77);
 }
 
-.sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
+.sectionPproductos{
     margin-left: 39vh;
     margin-top: 2vh;
 }
@@ -299,7 +304,7 @@ a:hover{
 /* FIN DE ACERCA DE */
 
 /* Responsive pc high resolution */
-@media (min-width: 1920px) {
+@media (min-width: 1400px) and (max-width: 1920px){
     .logo{
         padding-left: 2vw;
         width: 8vw;
@@ -359,7 +364,7 @@ a:hover{
         font-family: 'Lato', sans-serif;
     }
     .iframe{
-        margin-top: 15rem;
+        margin-top: 5rem;
         margin-bottom: 2rem;
     }
     .info{
@@ -438,9 +443,14 @@ a:hover{
         text-align: center;
         margin-left: 10vw;
         margin-right: 10vw;
-        margin-bottom: 15vh;
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
+    }
+    .productosSubtituloTactil{
+        font-family: 'Open Sans', sans-serif;
+        font-size: smaller;
+        color: rgb(151, 151, 151);
+        margin-bottom: 10vh;
     }
     .galeria{
         width: 100%;
@@ -454,9 +464,10 @@ a:hover{
         transform: translate(20px, 20px);
         opacity: 0;
     }
-    .pRemerablanca, .pRemerakitty, .pBuzokitty, .pPantalonkitty, .pZapatillaskitty{
+    .pProductos{
         font-family: 'Staatliches', cursive;
         font-size: 50px;
+        margin: auto;
     }
     .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
         height: 45vh;
@@ -472,13 +483,15 @@ a:hover{
         box-shadow: 0 0 5px rgb(77, 77, 77);
     }
     
-    .sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
-        margin-left: 5vh;
+    .sectionPproductos{
+        display: flex;
+        margin: auto;
         margin-top: 2vh;
     }
     
     .sectionPzapatillaskitty{
-        margin-left: 5vh;
+        display: flex;
+        margin-left: auto;
         margin-top: 2vh;
         margin-bottom: 15vh;
     }
@@ -505,3 +518,76 @@ a:hover{
     }
 }
 /* Fin responsive celular */
+
+/* Responsive tablets */
+@media (min-width: 481px) and (max-width: 991px){
+    .logo{
+        padding-left: 1vw;
+        width: 10vw;
+    }
+    .sectionImagen{
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+    }
+    .galeria{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .productosSubtitulo{
+        text-align: center;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+    .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+        height: 70vh;
+        position: absolute;
+        margin: auto;
+        box-shadow: 0 0 5px rgb(77, 77, 77);
+    }
+    
+    .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+        height: 70vh;
+        position: relative;
+        margin: auto;
+        box-shadow: 0 0 5px rgb(77, 77, 77);
+    }
+    #ropaDos{
+        transition: all 0.5s;
+    }
+    #ropaDos:hover{
+        transform: translate(0px);
+        opacity: 0;
+    }
+    .sectionPproductos{
+        display: flex;
+        margin: auto;
+        margin-top: 2vh;
+    }
+    .pProductos{
+        margin:auto;
+        font-size: 50px;
+    }
+    .sectionPzapatillaskitty{
+        display: flex;
+        margin: auto;
+        margin-top: 2vh;
+        margin-bottom: 15vh;
+    }
+    .container{
+        height: 100%;
+        margin-bottom: 15vh;
+    }
+    .kittyCorazon{
+        display: none;
+    }
+    .sectionInfo{
+        width: 95%;
+        margin-left: 1rem;
+        
+    }
+}
+/* Fin responsive tablets */
