@@ -446,11 +446,16 @@ a:hover{
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
     }
+    .productosSubtituloEscritorio{
+        display: none;
+    }
     .productosSubtituloTactil{
+        display: flex;
+        justify-content: center;
         font-family: 'Open Sans', sans-serif;
         font-size: smaller;
         color: rgb(151, 151, 151);
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
     }
     .galeria{
         width: 100%;
@@ -541,6 +546,17 @@ a:hover{
         margin-right: 5vw;
         font-family: 'Open Sans', sans-serif;
         font-size: 15px;
+    }
+    .productosSubtituloEscritorio{
+        display: none;
+    }
+    .productosSubtituloTactil{
+        display: flex;
+        justify-content: center;
+        font-family: 'Open Sans', sans-serif;
+        font-size: smaller;
+        color: rgb(151, 151, 151);
+        margin-bottom: 8vh;
     }
     .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
         height: 70vh;
