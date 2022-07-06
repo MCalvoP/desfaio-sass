@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    min-height: 100%;
+    position: relative;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10vh;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+@import "variables";
+@import "header";
+@import "footer";
+@import "inicio";
+@import "productos";
+@import "contactos";
+@import "ubicacion";
+@import "acercade";

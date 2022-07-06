@@ -1,0 +1,338 @@
+@import "variables";
+
+@media (max-width:480px) {
+    .logoKitty{
+        height: 20vh;
+        display: flex;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+.sectionImagen{
+    display: flex;
+    justify-content: center;
+    height: 55vh;
+}
+@media (max-width:480px){
+.sectionImagen{
+    display: none;
+}
+}
+@media (min-width: 481px) and (max-width: 991px){
+    .sectionImagen{
+        display: flex;
+        justify-content: center;
+        height: 40vh;
+    }
+}
+
+.productosSection{
+    width: 100%;
+    .productosTitulo{
+        text-align: center;
+        margin-top: 15vh;
+        margin-bottom: 5vh;
+        font-family: $font-family;
+        font-size: 30px;
+    }
+    @media (max-width:480px) {
+    .productosTitulo{
+        text-align: center;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+        font-family: $font-family;
+        font-size: 30px;
+        } 
+    }
+    @media (min-width: 1400px) and (max-width: 1920px){
+        .productosTitulo {
+            text-align: center;
+            margin-top: 10vh;
+            margin-bottom: 5vh;
+            font-family: $font-family;
+            font-size: 40px;
+        }
+    }
+    .productosDiv{
+        text-align: center;
+        .productosSubtitulo{
+            text-align: center;
+            margin-left: 35vw;
+            margin-right: 35vw;
+            line-height: 3.5vh;
+            font-family: 'Open Sans', sans-serif;
+            font-size: larger;
+        }
+        @media (max-width:480px){
+            .productosSubtitulo{
+                text-align: center;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 15px;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 991px){
+        .productosSubtitulo{
+            text-align: center;
+            margin-left: 5vw;
+            margin-right: 5vw;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 15px;
+        }
+        }
+        @media (min-width: 1400px) and (max-width: 1920px){
+            .productosSubtitulo {
+                text-align: center;
+                margin-left: 35vw;
+                margin-right: 35vw;
+                margin-bottom: 3vh;
+                line-height: 3.5vh;
+                font-family: 'Open Sans', sans-serif;
+                font-size: 25px;
+            }
+        }
+        .productosSubtituloEscritorio{
+            font-family: 'Open Sans', sans-serif;
+            font-size: smaller;
+            color: $font-color;
+            margin-bottom: 10vh;
+        }
+        .productosSubtituloTactil{
+            display: none;
+        }
+        @media (max-width:480px){
+            .productosSubtituloEscritorio{
+                display: none;
+            }
+            .productosSubtituloTactil{
+                display: flex;
+                justify-content: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: smaller;
+                color: $font-color;
+                margin-bottom: 5vh;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 991px){
+            .productosSubtituloEscritorio{
+                display: none;
+            }
+            .productosSubtituloTactil{
+                display: flex;
+                justify-content: center;
+                font-family: 'Open Sans', sans-serif;
+                font-size: smaller;
+                color: $font-color;
+                margin-bottom: 8vh;
+            }
+        }
+        @media (min-width: 1400px) and (max-width: 1920px){
+            .productosSubtituloEscritorio{
+                font-family: 'Open Sans', sans-serif;
+                font-size: larger;
+                color: $font-color;
+                margin-bottom: 10vh;
+            }
+            .productosSubtituloTactil{
+                display: none;
+            }
+        }
+    }
+}
+
+.galeria{
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+        height: 70vh;
+        margin-left: 15rem;
+        position: absolute;
+        box-shadow: 0 0 5px $bs-color;
+    }
+    @media (max-width:480px) {
+        .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+            height: 45vh;
+            position: absolute;
+            margin: auto;
+            box-shadow: 0 0 5px $bs-color;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 991px){
+        .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+            height: 70vh;
+            position: absolute;
+            margin: auto;
+            box-shadow: 0 0 5px $bs-color;
+        }
+    }
+    .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+        height: 70vh;
+        position: relative;
+        margin-left: 15rem;
+        box-shadow: 0 0 5px $bs-color;
+        &:hover{
+            transform: translate(450px);
+        }
+    }
+    @media (max-width:480px) {
+        .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+            height: 45vh;
+            position: relative;
+            margin: auto;
+            box-shadow: 0 0 5px $bs-color;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 991px){
+        .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+            height: 70vh;
+            position: relative;
+            margin: auto;
+            box-shadow: 0 0 5px $bs-color;
+        }
+    }
+    #ropaDos{
+        transition: all 1.5s;
+    }
+    @media (max-width:480px) {
+        #ropaDos{
+            transition: all 0.7s;
+        }
+        #ropaDos:hover{
+        transform: translate(20px, 20px);
+        opacity: 0;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 991px){
+        #ropaDos{
+            transition: all 0.5s;
+        }
+        #ropaDos:hover{
+            transform: translate(0px);
+            opacity: 0;
+        }
+    }
+    @media (min-width: 1400px) and (max-width: 1920px){
+        #ropaDos{
+            transition: all 1.5s;
+        }
+        #ropaDos:hover{
+            transform: translate(750px);
+        }
+    }
+}
+@media (max-width:480px) {
+    .galeria{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+} 
+@media (min-width: 481px) and (max-width: 991px){
+.galeria{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+.sectionPproductos{
+    margin-left: 39vh;
+    margin-top: 2vh;
+    .pProductos{
+        font-family: $font-family;
+        font-size: 72px;
+    }
+    @media (max-width:480px) {
+        .pProductos{
+            font-family: $font-family;
+            font-size: 50px;
+            margin: auto;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 991px){
+        .pProductos{
+            margin:auto;
+            font-size: 50px;
+        }
+    }
+    @media (min-width: 1400px) and (max-width: 1920px){
+    .pProductos{
+        font-size: 90px;
+        }
+    }
+}
+@media (max-width:480px) {
+    .sectionPproductos{
+        display: flex;
+        margin: auto;
+        margin-top: 2vh;
+    }
+}
+@media (min-width: 481px) and (max-width: 991px){
+    .sectionPproductos{
+        display: flex;
+        margin: auto;
+        margin-top: 2vh;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1920px){
+    .sectionPproductos{
+        margin-left: 25vh;
+        margin-top: 2vh;
+    }
+}
+
+.sectionPzapatillaskitty{
+    margin-left: 39vh;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+    .pProductos{
+        font-family: $font-family;
+        font-size: 72px;
+    }
+    @media (max-width:480px) {
+        .pProductos{
+            font-family: $font-family;
+            font-size: 50px;
+            margin: auto;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 991px){
+        .pProductos{
+            margin:auto;
+            font-size: 50px;
+        }
+    }
+    @media (min-width: 1400px) and (max-width: 1920px){
+        .pProductos{
+            font-size: 90px;
+            }
+        }
+}
+@media (max-width:480px) {
+    .sectionPzapatillaskitty{
+        display: flex;
+        margin-left: auto;
+        margin-top: 2vh;
+        margin-bottom: 15vh;
+    }
+}
+@media (min-width: 481px) and (max-width: 991px){
+    .sectionPzapatillaskitty{
+        display: flex;
+        margin: auto;
+        margin-top: 2vh;
+        margin-bottom: 15vh;
+    }
+}
+@media (min-width: 1400px) and (max-width: 1920px){
+    .sectionPzapatillaskitty{
+        margin-left: 25vh;
+        margin-top: 2vh;
+        margin-bottom: 15vh;
+    }
+}

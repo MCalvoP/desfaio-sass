@@ -1,0 +1,84 @@
+.sectionInfo{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 18vh;
+    margin-bottom: 20vh;
+    position: relative;
+    .kittyCorazon{
+        position: absolute;
+        left: 110%;
+        top: 15%;
+        width: 60vh;
+    }
+    .info{
+        font-family: 'Staatliches', cursive;
+        font-weight: 550;
+        font-size: 40px;
+    }
+    .infoP{
+        margin-top: 2vh;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .infoh2{
+        font-family: 'Staatliches', cursive;
+        margin-top: 3vh;
+        font-weight: 550;
+    }
+    .infoh3{
+        margin-top: 2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: large;
+    }
+    .link{
+        text-decoration: underline;
+    }
+}
+
+@media (max-width:480px){
+    .container{
+        width: 100%;
+        max-width: 1200px;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin:auto;
+        margin-bottom: 7rem;
+    }
+    .sectionInfo{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin: auto;
+        margin-left: 1rem;
+        margin-bottom: 6rem;
+    }
+    .kittyCorazon{
+        display: none;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1920px){
+    .info{
+        font-family: 'Staatliches', cursive;
+        font-weight: 550;
+        font-size: 60px;
+    }
+    .infoP{
+        margin-top: 2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+    .infoh2{
+        font-family: 'Staatliches', cursive;
+        margin-top: 3vh;
+        font-weight: 550;
+        font-size: 30px;
+    }
+    .infoh3{
+        margin-top: 2vh;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 20px;
+    }
+}

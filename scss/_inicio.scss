@@ -1,0 +1,22 @@
+.bienvenida{
+    height: 12vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vh;
+    .generalImageTwo{
+        opacity: 0;
+    }
+    @media (max-width: 480px){
+        .generalImageOne{
+            display: none;
+        }
+        .generalImageTwo{
+            opacity: 1;
+            height: 15rem;
+        }
+    }
+}
+
+
+

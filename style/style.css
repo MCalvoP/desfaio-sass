@@ -1,613 +1,631 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-html{
-    min-height: 100%;
-    position: relative;
+html {
+  min-height: 100%;
+  position: relative;
 }
 
-body{
-    margin: 0;
-    background-color: rgb(255, 255, 255);
-    margin-bottom: 10vh;
+body {
+  margin: 0;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10vh;
 }
 
-/* HEADER */
-.cabecera{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 2;
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
-.bgc-personalizated{
-    background-color: #f1f1f1;
+.cabecera .bgc-personalizated {
+  background-color: #f1f1f1;
+}
+.cabecera .logo {
+  padding-left: 1vw;
+  width: 7vw;
+}
+.cabecera ul {
+  list-style: none;
+}
+.cabecera ul a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.cabecera ul a:hover {
+  color: black;
 }
 
-.logo{
+.logoKitty {
+  height: 20vh;
+  display: flex;
+  margin: auto;
+  margin-top: 70px;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+@media (max-width: 480px) {
+  .cabecera .logo {
     padding-left: 1vw;
-    width: 7vw;
+    width: 20vw;
+  }
+}
+.footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 12vh;
+}
+.footer .sectionFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.footer .sectionFooter .logoFooter {
+  width: 5vh;
+  margin-top: 3vh;
+  margin-right: 4vh;
+  transition: all 1s;
+}
+.footer .sectionFooter .logoFooter:hover {
+  transform: rotate(15deg);
+}
+.footer .pFooter {
+  color: grey;
+  font-family: "Poppins", sans-serif;
+  font-size: 70%;
+  margin-left: 2vh;
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .footer .pFooter {
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-size: 120%;
+    margin-left: 2vh;
+  }
 }
 
-ul{
-    list-style: none;
+@media (max-width: 480px) {
+  .footer .sectionFooter .logoFooter {
+    width: 2vh;
+    margin-top: 5vh;
+    margin-right: 2vh;
+    transition: all 1s;
+  }
+  .footer .pFooter {
+    color: grey;
+    font-family: "Poppins", sans-serif;
+    font-size: 55%;
+    margin-left: 1vh;
+  }
+}
+.bienvenida {
+  height: 12vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10vh;
+}
+.bienvenida .generalImageTwo {
+  opacity: 0;
+}
+@media (max-width: 480px) {
+  .bienvenida .generalImageOne {
+    display: none;
+  }
+  .bienvenida .generalImageTwo {
+    opacity: 1;
+    height: 15rem;
+  }
 }
 
-a{
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-}
-
-.logoKitty{
+@media (max-width: 480px) {
+  .logoKitty {
     height: 20vh;
     display: flex;
     margin: auto;
-    margin-top: 70px;
-    padding-top: 5vh;
-    padding-bottom:5vh;
+    margin-top: 30px;
+  }
+}
+.sectionImagen {
+  display: flex;
+  justify-content: center;
+  height: 55vh;
 }
 
-a:hover{
-    color: black;
-}
-
-.color{
-    color: rgb(63, 63, 63);
-}
-
-.generalImageTwo{
+@media (max-width: 480px) {
+  .sectionImagen {
     display: none;
+  }
 }
-/* FIN DE HEADER */
-
-/* FOOTER */
-.footer{
-    background-color: black;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 12vh;
-}
-
-.sectionFooter{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.logoFooter{
-    width:5vh;
-    margin-top: 3vh;
-    margin-right: 4vh;
-    transition: all 1s;
-}
-
-.logoFooter:hover{
-    transform: rotate(15deg);
-}
-
-.pFooter{
-    color:grey;
-    font-family: 'Poppins', sans-serif;
-    font-size: 70%;
-    margin-left: 2vh;
-}
-/* FIN FOOTER */
-
-/* INICIO */
-.bienvenida{
-    height: 15vw;
+@media (min-width: 481px) and (max-width: 991px) {
+  .sectionImagen {
     display: flex;
     justify-content: center;
+    height: 40vh;
+  }
+}
+.productosSection {
+  width: 100%;
+}
+.productosSection .productosTitulo {
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  font-family: "Staatliches", cursive;
+  font-size: 30px;
+}
+@media (max-width: 480px) {
+  .productosSection .productosTitulo {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+    font-family: "Staatliches", cursive;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .productosSection .productosTitulo {
     text-align: center;
     margin-top: 10vh;
-}
-/* FIN INICIO */
-
-/* PRODUCTOS */
-.sectionImagen{
-    display: flex;
-    justify-content: center;
-    height: 55vh;
-}
-
-.productosSection{
-    width: 100%;
-}
-
-.productosTitulo{
-    text-align: center;
-    margin-top: 15vh;
     margin-bottom: 5vh;
-    font-family: 'Staatliches', cursive;
-    font-size: 30px;
+    font-family: "Staatliches", cursive;
+    font-size: 40px;
+  }
 }
-
-.productosDiv{
+.productosSection .productosDiv {
+  text-align: center;
+}
+.productosSection .productosDiv .productosSubtitulo {
+  text-align: center;
+  margin-left: 35vw;
+  margin-right: 35vw;
+  line-height: 3.5vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: larger;
+}
+@media (max-width: 480px) {
+  .productosSection .productosDiv .productosSubtitulo {
     text-align: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+  }
 }
-
-.productosSubtitulo{
+@media (min-width: 481px) and (max-width: 991px) {
+  .productosSection .productosDiv .productosSubtitulo {
+    text-align: center;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .productosSection .productosDiv .productosSubtitulo {
     text-align: center;
     margin-left: 35vw;
     margin-right: 35vw;
+    margin-bottom: 3vh;
     line-height: 3.5vh;
-    font-family: 'Open Sans', sans-serif;
-    font-size: larger;
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+  }
 }
-
-.productosSubtituloEscritorio{
-    font-family: 'Open Sans', sans-serif;
+.productosSection .productosDiv .productosSubtituloEscritorio {
+  font-family: "Open Sans", sans-serif;
+  font-size: smaller;
+  color: rgb(151, 151, 151);
+  margin-bottom: 10vh;
+}
+.productosSection .productosDiv .productosSubtituloTactil {
+  display: none;
+}
+@media (max-width: 480px) {
+  .productosSection .productosDiv .productosSubtituloEscritorio {
+    display: none;
+  }
+  .productosSection .productosDiv .productosSubtituloTactil {
+    display: flex;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
     font-size: smaller;
     color: rgb(151, 151, 151);
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
+  }
 }
-
-.productosSubtituloTactil{
+@media (min-width: 481px) and (max-width: 991px) {
+  .productosSection .productosDiv .productosSubtituloEscritorio {
     display: none;
-}
-
-.galeria{
-    width: 100%;
+  }
+  .productosSection .productosDiv .productosSubtituloTactil {
     display: flex;
-    justify-content:baseline;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: smaller;
+    color: rgb(151, 151, 151);
+    margin-bottom: 8vh;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .productosSection .productosDiv .productosSubtituloEscritorio {
+    font-family: "Open Sans", sans-serif;
+    font-size: larger;
+    color: rgb(151, 151, 151);
+    margin-bottom: 10vh;
+  }
+  .productosSection .productosDiv .productosSubtituloTactil {
+    display: none;
+  }
 }
 
-#ropaDos{
-    transition: all 1.5s;
+.galeria {
+  width: 100%;
+  display: flex;
+  justify-content: baseline;
 }
-
-#ropaDos:hover{
-    transform: translate(450px);
+.galeria .remeraBlanca, .galeria .remeraKitty, .galeria .buzoKitty, .galeria .pantalonKitty, .galeria .zapatillasKitty {
+  height: 70vh;
+  margin-left: 15rem;
+  position: absolute;
+  box-shadow: 0 0 5px rgb(77, 77, 77);
 }
-
-.pProductos{
-    font-family: 'Staatliches', cursive;
-    font-size: 72px;
-}
-
-.remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-    height: 70vh;
-    margin-left: 15rem;
+@media (max-width: 480px) {
+  .galeria .remeraBlanca, .galeria .remeraKitty, .galeria .buzoKitty, .galeria .pantalonKitty, .galeria .zapatillasKitty {
+    height: 45vh;
     position: absolute;
+    margin: auto;
     box-shadow: 0 0 5px rgb(77, 77, 77);
+  }
 }
-
-.remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+@media (min-width: 481px) and (max-width: 991px) {
+  .galeria .remeraBlanca, .galeria .remeraKitty, .galeria .buzoKitty, .galeria .pantalonKitty, .galeria .zapatillasKitty {
+    height: 70vh;
+    position: absolute;
+    margin: auto;
+    box-shadow: 0 0 5px rgb(77, 77, 77);
+  }
+}
+.galeria .remeraBlancaTrasera, .galeria .remeraKittyTrasera, .galeria .buzoKittyTrasera, .galeria .pantalonKittyTrasera, .galeria .zapatillasKittyTrasera {
+  height: 70vh;
+  position: relative;
+  margin-left: 15rem;
+  box-shadow: 0 0 5px rgb(77, 77, 77);
+}
+.galeria .remeraBlancaTrasera:hover, .galeria .remeraKittyTrasera:hover, .galeria .buzoKittyTrasera:hover, .galeria .pantalonKittyTrasera:hover, .galeria .zapatillasKittyTrasera:hover {
+  transform: translate(450px);
+}
+@media (max-width: 480px) {
+  .galeria .remeraBlancaTrasera, .galeria .remeraKittyTrasera, .galeria .buzoKittyTrasera, .galeria .pantalonKittyTrasera, .galeria .zapatillasKittyTrasera {
+    height: 45vh;
+    position: relative;
+    margin: auto;
+    box-shadow: 0 0 5px rgb(77, 77, 77);
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .galeria .remeraBlancaTrasera, .galeria .remeraKittyTrasera, .galeria .buzoKittyTrasera, .galeria .pantalonKittyTrasera, .galeria .zapatillasKittyTrasera {
     height: 70vh;
     position: relative;
-    margin-left: 15rem;
+    margin: auto;
     box-shadow: 0 0 5px rgb(77, 77, 77);
+  }
+}
+.galeria #ropaDos {
+  transition: all 1.5s;
+}
+@media (max-width: 480px) {
+  .galeria #ropaDos {
+    transition: all 0.7s;
+  }
+  .galeria #ropaDos:hover {
+    transform: translate(20px, 20px);
+    opacity: 0;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .galeria #ropaDos {
+    transition: all 0.5s;
+  }
+  .galeria #ropaDos:hover {
+    transform: translate(0px);
+    opacity: 0;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .galeria #ropaDos {
+    transition: all 1.5s;
+  }
+  .galeria #ropaDos:hover {
+    transform: translate(750px);
+  }
 }
 
-.sectionPproductos{
-    margin-left: 39vh;
+@media (max-width: 480px) {
+  .galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .galeria {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+.sectionPproductos {
+  margin-left: 39vh;
+  margin-top: 2vh;
+}
+.sectionPproductos .pProductos {
+  font-family: "Staatliches", cursive;
+  font-size: 72px;
+}
+@media (max-width: 480px) {
+  .sectionPproductos .pProductos {
+    font-family: "Staatliches", cursive;
+    font-size: 50px;
+    margin: auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .sectionPproductos .pProductos {
+    margin: auto;
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .sectionPproductos .pProductos {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionPproductos {
+    display: flex;
+    margin: auto;
     margin-top: 2vh;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .sectionPproductos {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .sectionPproductos {
+    margin-left: 25vh;
+    margin-top: 2vh;
+  }
+}
+.sectionPzapatillaskitty {
+  margin-left: 39vh;
+  margin-top: 2vh;
+  margin-bottom: 15vh;
+}
+.sectionPzapatillaskitty .pProductos {
+  font-family: "Staatliches", cursive;
+  font-size: 72px;
+}
+@media (max-width: 480px) {
+  .sectionPzapatillaskitty .pProductos {
+    font-family: "Staatliches", cursive;
+    font-size: 50px;
+    margin: auto;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .sectionPzapatillaskitty .pProductos {
+    margin: auto;
+    font-size: 50px;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .sectionPzapatillaskitty .pProductos {
+    font-size: 90px;
+  }
 }
 
-.sectionPzapatillaskitty{
-    margin-left: 39vh;
+@media (max-width: 480px) {
+  .sectionPzapatillaskitty {
+    display: flex;
+    margin-left: auto;
     margin-top: 2vh;
     margin-bottom: 15vh;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .sectionPzapatillaskitty {
+    display: flex;
+    margin: auto;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .sectionPzapatillaskitty {
+    margin-left: 25vh;
+    margin-top: 2vh;
+    margin-bottom: 15vh;
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.container .card {
+  width: 330px;
+  height: 350px;
+  margin: 20px;
+  text-align: center;
+}
+.container .card img {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+}
+.container .card h4 {
+  font-weight: 600;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .container .card h4 {
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    font-size: 22px;
+  }
+}
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 16px;
+  font-weight: 300;
+  padding-top: 4vh;
+  font-family: "Lato", sans-serif;
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .container .card p {
+    padding: 0 1rem;
+    font-size: 20px;
+    font-weight: 16px;
+    padding-top: 4vh;
+    font-family: "Lato", sans-serif;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .container .card {
+    height: 450px;
+  }
 }
 
-/* FIN PRODUCTOS */
+@media (min-width: 481px) and (max-width: 991px) {
+  .container {
+    height: 100%;
+  }
+}
+.container {
+  margin-bottom: 12rem;
+}
+.container .title {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  font-family: "Staatliches", cursive;
+}
+.container .parraf {
+  font-family: "Open Sans", sans-serif;
+}
 
-/* CONTÁCTANOS */
-.container{
+.sectionIframe {
+  margin-bottom: 120px;
+  text-align: center;
+}
+.sectionIframe .iframe {
+  box-shadow: 0px 0px 15px rgb(77, 77, 77);
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .sectionIframe .iframe {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.sectionInfo {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 18vh;
+  margin-bottom: 20vh;
+  position: relative;
+}
+.sectionInfo .kittyCorazon {
+  position: absolute;
+  left: 110%;
+  top: 15%;
+  width: 60vh;
+}
+.sectionInfo .info {
+  font-family: "Staatliches", cursive;
+  font-weight: 550;
+  font-size: 40px;
+}
+.sectionInfo .infoP {
+  margin-top: 2vh;
+  font-family: "Open Sans", sans-serif;
+}
+.sectionInfo .infoh2 {
+  font-family: "Staatliches", cursive;
+  margin-top: 3vh;
+  font-weight: 550;
+}
+.sectionInfo .infoh3 {
+  margin-top: 2vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+}
+.sectionInfo .link {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .container {
     width: 100%;
     max-width: 1200px;
-    height: 300px;
+    height: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:auto;
-}
-
-.container .card{
-    width: 330px;
-    height: 350px;
-    margin: 20px;
-    text-align: center;
-}
-
-.container .card img{
     margin: auto;
-    width: 150px;
-    height: 150px;
-    
-}
-
-.container .card h4{
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
-}
-
-.container .card p{
-    padding: 0 1rem;
-    font-size: 16px;
-    font-weight: 16px;
-    font-weight: 300;
-    padding-top: 4vh;
-    font-family: 'Lato', sans-serif;
-}
-/* FIN CONTÁCTANOS */
-
-/* ENCONTRANOS */
-.container{
-    margin-bottom: 12rem;
-}
-.sectionIframe{
-    margin-bottom: 120px;
-    text-align: center;
-}
-
-.iframe{
-    box-shadow: 0px 0px 15px rgb(77, 77, 77);
-}
-
-.title{
-    display: flex;
-    justify-content: center;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    font-family: 'Staatliches', cursive;
-}
-
-.parraf{
-    font-family: 'Open Sans', sans-serif;
-    
-}
-/* FIN ENCONTRANOS */
-
-/* ACERCA DE */
-.sectionInfo{
+    margin-bottom: 7rem;
+  }
+  .sectionInfo {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin-left: 18vh;
-    margin-bottom: 20vh;
-    position: relative;
+    width: 95%;
+    margin: auto;
+    margin-left: 1rem;
+    margin-bottom: 6rem;
+  }
+  .kittyCorazon {
+    display: none;
+  }
 }
-
-.info{
-    font-family: 'Staatliches', cursive;
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .info {
+    font-family: "Staatliches", cursive;
     font-weight: 550;
-    font-size: 40px;
-}
-
-.infoP{
+    font-size: 60px;
+  }
+  .infoP {
     margin-top: 2vh;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.infoh2{
-    font-family: 'Staatliches', cursive;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
+  .infoh2 {
+    font-family: "Staatliches", cursive;
     margin-top: 3vh;
     font-weight: 550;
-}
-
-.infoh3{
+    font-size: 30px;
+  }
+  .infoh3 {
     margin-top: 2vh;
-    font-family: 'Open Sans', sans-serif;
-    font-size: large;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+  }
 }
 
-.link{
-    text-decoration: underline;
-}
-
-.kittyCorazon{
-    position: absolute;
-    left: 110%;
-    top: 15%;
-    width: 60vh;
-}
-/* FIN DE ACERCA DE */
-
-/* Responsive pc high resolution */
-@media (min-width: 1400px) and (max-width: 1920px){
-    .logo{
-        padding-left: 2vw;
-        width: 8vw;
-    }
-    .cabeceraLista {
-        height: 15vh;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        font-family: 'Lato', sans-serif;
-        font-size: 25px;
-    }
-    .productosTitulo {
-        text-align: center;
-        margin-top: 10vh;
-        margin-bottom: 5vh;
-        font-family: 'Staatliches', cursive;
-        font-size: 40px;
-    }
-    .productosSubtitulo {
-        text-align: center;
-        margin-left: 35vw;
-        margin-right: 35vw;
-        margin-bottom: 15vh;
-        line-height: 3.5vh;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 25px;
-    }
-    #ropaDos{
-        transition: all 1.5s;
-    }
-    #ropaDos:hover{
-        transform: translate(750px);
-    }
-    .sectionPRemerakitty, .sectionPRemerablanca, .sectionPBuzokitty, .sectionPpantalonkitty{
-        margin-left: 25vh;
-        margin-top: 2vh;
-    }
-    .sectionPzapatillaskitty{
-        margin-left: 25vh;
-        margin-top: 2vh;
-        margin-bottom: 15vh;
-    }
-    .container .card{
-        height: 450px;
-    }
-    .container .card h4{
-        font-weight: 600;
-        font-family: 'Lato', sans-serif;
-        font-size: 22px;
-    }
-    .container .card p{
-        padding: 0 1rem;
-        font-size: 20px;
-        font-weight: 16px;
-        padding-top: 4vh;
-        font-family: 'Lato', sans-serif;
-    }
-    .iframe{
-        margin-top: 5rem;
-        margin-bottom: 2rem;
-    }
-    .info{
-        font-family: 'Staatliches', cursive;
-        font-weight: 550;
-        font-size: 60px;
-    }
-    .infoP{
-        margin-top: 2vh;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 20px;
-    }
-    .infoh2{
-        font-family: 'Staatliches', cursive;
-        margin-top: 3vh;
-        font-weight: 550;
-        font-size: 30px;
-    }
-    .infoh3{
-        margin-top: 2vh;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 20px;
-    }
-    .pFooter {
-        color: grey;
-        font-family: 'Poppins', sans-serif;
-        font-size: 120%;
-        margin-left: 2vh;
-    }
-}
-/* Fin responsive high resolution */
-
-/* Responsive celular */
-@media (max-width: 480px) {
-    .logo{
-        padding-left: 1vw;
-        width: 20vw;
-    }
-    .logoFooter{
-        width:2vh;
-        margin-top: 5vh;
-        margin-right: 2vh;
-        transition: all 1s;
-    }
-    .pFooter{
-        color:grey;
-        font-family: 'Poppins', sans-serif;
-        font-size: 55%;
-        margin-left: 1vh;
-    }
-    .logoKitty{
-        height: 15vh;
-        display: flex;
-        margin: auto;
-        margin-top: 70px;
-    }
-    .generalImageOne{
-        display: none;
-    }
-    .generalImageTwo{
-        display: flex;
-        width: 72%;
-        height: 20rem;
-    }
-    .sectionImagen{
-        display: none;
-    }
-    .productosTitulo{
-        text-align: center;
-        margin-top: 2vh;
-        margin-bottom: 5vh;
-        font-family: 'Staatliches', cursive;
-        font-size: 30px;
-    }
-    .productosSubtitulo{
-        text-align: center;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-    }
-    .productosSubtituloEscritorio{
-        display: none;
-    }
-    .productosSubtituloTactil{
-        display: flex;
-        justify-content: center;
-        font-family: 'Open Sans', sans-serif;
-        font-size: smaller;
-        color: rgb(151, 151, 151);
-        margin-bottom: 5vh;
-    }
-    .galeria{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    #ropaDos{
-        transition: all 0.7s;
-    }
-    #ropaDos:hover{
-        transform: translate(20px, 20px);
-        opacity: 0;
-    }
-    .pProductos{
-        font-family: 'Staatliches', cursive;
-        font-size: 50px;
-        margin: auto;
-    }
-    .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-        height: 45vh;
-        position: absolute;
-        margin: auto;
-        box-shadow: 0 0 5px rgb(77, 77, 77);
-    }
-    
-    .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
-        height: 45vh;
-        position: relative;
-        margin: auto;
-        box-shadow: 0 0 5px rgb(77, 77, 77);
-    }
-    
-    .sectionPproductos{
-        display: flex;
-        margin: auto;
-        margin-top: 2vh;
-    }
-    
-    .sectionPzapatillaskitty{
-        display: flex;
-        margin-left: auto;
-        margin-top: 2vh;
-        margin-bottom: 15vh;
-    }
-    .container{
-        width: 100%;
-        max-width: 1200px;
-        height: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin:auto;
-        margin-bottom: 7rem;
-    }
-    .sectionInfo{
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-        margin: auto;
-        margin-left: 1rem;
-        margin-bottom: 6rem;
-    }
-    .kittyCorazon{
-        display: none;
-    }
-}
-/* Fin responsive celular */
-
-/* Responsive tablets */
-@media (min-width: 481px) and (max-width: 991px){
-    .logo{
-        padding-left: 1vw;
-        width: 10vw;
-    }
-    .sectionImagen{
-        display: flex;
-        justify-content: center;
-        height: 40vh;
-    }
-    .galeria{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .productosSubtitulo{
-        text-align: center;
-        margin-left: 5vw;
-        margin-right: 5vw;
-        font-family: 'Open Sans', sans-serif;
-        font-size: 15px;
-    }
-    .productosSubtituloEscritorio{
-        display: none;
-    }
-    .productosSubtituloTactil{
-        display: flex;
-        justify-content: center;
-        font-family: 'Open Sans', sans-serif;
-        font-size: smaller;
-        color: rgb(151, 151, 151);
-        margin-bottom: 8vh;
-    }
-    .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-        height: 70vh;
-        position: absolute;
-        margin: auto;
-        box-shadow: 0 0 5px rgb(77, 77, 77);
-    }
-    
-    .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
-        height: 70vh;
-        position: relative;
-        margin: auto;
-        box-shadow: 0 0 5px rgb(77, 77, 77);
-    }
-    #ropaDos{
-        transition: all 0.5s;
-    }
-    #ropaDos:hover{
-        transform: translate(0px);
-        opacity: 0;
-    }
-    .sectionPproductos{
-        display: flex;
-        margin: auto;
-        margin-top: 2vh;
-    }
-    .pProductos{
-        margin:auto;
-        font-size: 50px;
-    }
-    .sectionPzapatillaskitty{
-        display: flex;
-        margin: auto;
-        margin-top: 2vh;
-        margin-bottom: 15vh;
-    }
-    .container{
-        height: 100%;
-        margin-bottom: 15vh;
-    }
-    .kittyCorazon{
-        display: none;
-    }
-    .sectionInfo{
-        width: 95%;
-        margin-left: 1rem;
-        
-    }
-}
-/* Fin responsive tablets */
+/*# sourceMappingURL=style.css.map */

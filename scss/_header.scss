@@ -1,0 +1,37 @@
+.cabecera{
+    .bgc-personalizated{
+        background-color: #f1f1f1;
+    }
+    .logo{
+        padding-left: 1vw;
+        width: 7vw;
+        
+    }
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        &:hover{
+            color: black;
+        }
+        }
+    }
+}
+
+.logoKitty{
+    height: 20vh;
+    display: flex;
+    margin: auto;
+    margin-top: 70px;
+    padding-top: 5vh;
+    padding-bottom:5vh;
+}
+
+@media (max-width: 480px) {
+    .cabecera
+    .logo{
+        padding-left: 1vw;
+        width: 20vw;
+    }
+}
