@@ -152,6 +152,14 @@
         position: absolute;
         box-shadow: 0 0 5px $bs-color;
     }
+    @media (max-width:1024px) {
+        .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
+            height: 50vh;
+            margin-left: 9rem;
+            position: absolute;
+            box-shadow: 0 0 5px $bs-color;
+        }
+    }
     @media (max-width:480px) {
         .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
             height: 45vh;
@@ -175,6 +183,17 @@
         box-shadow: 0 0 5px $bs-color;
         &:hover{
             transform: translate(450px);
+        }
+    }
+    @media (max-width:1024px) {
+        .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
+            height: 50vh;
+            position: relative;
+            margin-left: 9rem;
+            box-shadow: 0 0 5px $bs-color;
+            &:hover{
+                transform: translate(370px);
+            }
         }
     }
     @media (max-width:480px) {
@@ -285,6 +304,12 @@
         margin-top: 2vh;
     }
 }
+@media (min-width:1020px) and (max-width:1024px) {
+    .sectionPproductos{
+        margin-left: 20vh;
+        margin-top: 2vh;
+    }
+}
 
 .sectionPzapatillaskitty{
     margin-left: 39vh;
@@ -311,7 +336,13 @@
         .pProductos{
             font-size: 90px;
             }
+    }
+    @media (min-width:1020px) and (max-width:1024px) {
+        .pProductos{
+            font-family: $font-family;
+            font-size: 72px;
         }
+    }
 }
 @media (max-width:480px) {
     .sectionPzapatillaskitty{
@@ -334,5 +365,11 @@
         margin-left: 25vh;
         margin-top: 2vh;
         margin-bottom: 15vh;
+    }
+}
+@media (min-width:1020px) and (max-width:1024px) {
+    .sectionPzapatillaskitty{
+        margin-left: 20vh;
+        margin-top: 2vh;
     }
 }

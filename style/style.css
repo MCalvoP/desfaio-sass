@@ -19,6 +19,11 @@ a {
   color: rgb(0, 0, 0);
 }
 
+.cabecera {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+}
 .cabecera .bgc-personalizated {
   background-color: #f1f1f1;
 }
@@ -274,6 +279,14 @@ a {
   position: absolute;
   box-shadow: 0 0 5px rgb(77, 77, 77);
 }
+@media (max-width: 1024px) {
+  .galeria .remeraBlanca, .galeria .remeraKitty, .galeria .buzoKitty, .galeria .pantalonKitty, .galeria .zapatillasKitty {
+    height: 50vh;
+    margin-left: 9rem;
+    position: absolute;
+    box-shadow: 0 0 5px rgb(77, 77, 77);
+  }
+}
 @media (max-width: 480px) {
   .galeria .remeraBlanca, .galeria .remeraKitty, .galeria .buzoKitty, .galeria .pantalonKitty, .galeria .zapatillasKitty {
     height: 45vh;
@@ -298,6 +311,17 @@ a {
 }
 .galeria .remeraBlancaTrasera:hover, .galeria .remeraKittyTrasera:hover, .galeria .buzoKittyTrasera:hover, .galeria .pantalonKittyTrasera:hover, .galeria .zapatillasKittyTrasera:hover {
   transform: translate(450px);
+}
+@media (max-width: 1024px) {
+  .galeria .remeraBlancaTrasera, .galeria .remeraKittyTrasera, .galeria .buzoKittyTrasera, .galeria .pantalonKittyTrasera, .galeria .zapatillasKittyTrasera {
+    height: 50vh;
+    position: relative;
+    margin-left: 9rem;
+    box-shadow: 0 0 5px rgb(77, 77, 77);
+  }
+  .galeria .remeraBlancaTrasera:hover, .galeria .remeraKittyTrasera:hover, .galeria .buzoKittyTrasera:hover, .galeria .pantalonKittyTrasera:hover, .galeria .zapatillasKittyTrasera:hover {
+    transform: translate(370px);
+  }
 }
 @media (max-width: 480px) {
   .galeria .remeraBlancaTrasera, .galeria .remeraKittyTrasera, .galeria .buzoKittyTrasera, .galeria .pantalonKittyTrasera, .galeria .zapatillasKittyTrasera {
@@ -406,6 +430,12 @@ a {
     margin-top: 2vh;
   }
 }
+@media (min-width: 1020px) and (max-width: 1024px) {
+  .sectionPproductos {
+    margin-left: 20vh;
+    margin-top: 2vh;
+  }
+}
 .sectionPzapatillaskitty {
   margin-left: 39vh;
   margin-top: 2vh;
@@ -433,6 +463,12 @@ a {
     font-size: 90px;
   }
 }
+@media (min-width: 1020px) and (max-width: 1024px) {
+  .sectionPzapatillaskitty .pProductos {
+    font-family: "Staatliches", cursive;
+    font-size: 72px;
+  }
+}
 
 @media (max-width: 480px) {
   .sectionPzapatillaskitty {
@@ -455,6 +491,12 @@ a {
     margin-left: 25vh;
     margin-top: 2vh;
     margin-bottom: 15vh;
+  }
+}
+@media (min-width: 1020px) and (max-width: 1024px) {
+  .sectionPzapatillaskitty {
+    margin-left: 20vh;
+    margin-top: 2vh;
   }
 }
 .container {
@@ -512,6 +554,11 @@ a {
 }
 
 @media (min-width: 481px) and (max-width: 991px) {
+  .container {
+    height: 100%;
+  }
+}
+@media (max-width: 1024px) {
   .container {
     height: 100%;
   }
