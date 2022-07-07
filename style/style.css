@@ -116,6 +116,7 @@ a {
 }
 .bienvenida .generalImageTwo {
   opacity: 0;
+  display: none;
 }
 @media (max-width: 480px) {
   .bienvenida .generalImageOne {
