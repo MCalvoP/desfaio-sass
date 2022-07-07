@@ -22,7 +22,18 @@
     @media (min-width: 1400px) and (max-width: 1920px){
         .iframe{
             margin-top: 5rem;
-            margin-bottom: 2rem;
+            margin-bottom: 5rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .iframe{
+            margin-top: 0px;
+            margin-bottom: 1rem;
+        }
+    }
+    @media (min-width: 481px) and (max-width: 991px){
+        .iframe{
+            margin-bottom: 1rem;
         }
     }
 }
