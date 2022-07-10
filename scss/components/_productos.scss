@@ -1,11 +1,13 @@
-@import "variables";
-@import "scrollbar";
+@import "../base/variables";
+@import "../base/scrollbar";
+@import "../base/mapas";
+@import "../base/mixin";
 
 @media (max-width:480px) {
     .logoKitty{
         height: 20vh;
         display: flex;
-        margin: auto;
+        margin: map-get($productos, margin);
         margin-top: 30px;
     }
 }
@@ -144,12 +146,10 @@
 }
 
 .galeria{
-    width: 100%;
-    display: flex;
-    justify-content: baseline;
+    @include galeria (100%, flex, baseline);
     .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-        height: 70vh;
-        margin-left: 15rem;
+        height: map-get($productos, altura);
+        margin-left: map-get($productos, margin-left);
         position: absolute;
         box-shadow: 0 0 5px $bs-color;
     }
@@ -165,25 +165,25 @@
         .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
             height: 45vh;
             position: absolute;
-            margin: auto;
+            margin: map-get($productos, margin);
             box-shadow: 0 0 5px $bs-color;
         }
     }
     @media (min-width: 481px) and (max-width: 991px){
         .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-            height: 70vh;
+            height: map-get($productos, altura);
             position: absolute;
-            margin: auto;
+            margin: map-get($productos, margin);
             box-shadow: 0 0 5px $bs-color;
         }
     }
     .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
-        height: 70vh;
+        height: map-get($productos, altura);
+        margin-left: map-get($productos, margin-left);
         position: relative;
-        margin-left: 15rem;
         box-shadow: 0 0 5px $bs-color;
         &:hover{
-            transform: translate(450px);
+            @include animaciones (translate(450px));
         }
     }
     @media (max-width:1024px) {
@@ -193,7 +193,7 @@
             margin-left: 9rem;
             box-shadow: 0 0 5px $bs-color;
             &:hover{
-                transform: translate(370px);
+                @include animaciones (translate(370px));
             }
         }
     }
@@ -201,15 +201,15 @@
         .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
             height: 45vh;
             position: relative;
-            margin: auto;
+            margin: map-get($productos, margin);
             box-shadow: 0 0 5px $bs-color;
         }
     }
     @media (min-width: 481px) and (max-width: 991px){
         .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
-            height: 70vh;
+            height: map-get($productos, altura);
             position: relative;
-            margin: auto;
+            margin: map-get($productos, margin);
             box-shadow: 0 0 5px $bs-color;
         }
     }
@@ -221,7 +221,7 @@
             transition: all 0.7s;
         }
         #ropaDos:hover{
-        transform: translate(20px, 20px);
+            @include animaciones (translate(20px, 20px));
         opacity: 0;
         }
     }
@@ -230,7 +230,7 @@
             transition: all 0.5s;
         }
         #ropaDos:hover{
-            transform: translate(0px);
+            @include animaciones (translate(0px));
             opacity: 0;
         }
     }
@@ -239,25 +239,20 @@
             transition: all 1.5s;
         }
         #ropaDos:hover{
-            transform: translate(750px);
+            @include animaciones (translate(750px))
         }
     }
 }
 @media (max-width:480px) {
     .galeria{
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        @include galeria (100%, flex, center)
     }
 } 
 @media (min-width: 481px) and (max-width: 991px){
 .galeria{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    @include galeria (100%, flex, center)
 }
 }
-
 
 .sectionPproductos{
     margin-left: 39vh;
@@ -270,12 +265,12 @@
         .pProductos{
             font-family: $font-family;
             font-size: 50px;
-            margin: auto;
+            margin: map-get($productos, margin);
         }
     }
     @media (min-width: 481px) and (max-width: 991px){
         .pProductos{
-            margin:auto;
+            margin: map-get($productos, margin);
             font-size: 50px;
         }
     }
@@ -288,14 +283,14 @@
 @media (max-width:480px) {
     .sectionPproductos{
         display: flex;
-        margin: auto;
+        margin: map-get($productos, margin);
         margin-top: 2vh;
     }
 }
 @media (min-width: 481px) and (max-width: 991px){
     .sectionPproductos{
         display: flex;
-        margin: auto;
+        margin: map-get($productos, margin);
         margin-top: 2vh;
     }
 }
@@ -324,12 +319,12 @@
         .pProductos{
             font-family: $font-family;
             font-size: 50px;
-            margin: auto;
+            margin: map-get($productos, margin);
         }
     }
     @media (min-width: 481px) and (max-width: 991px){
         .pProductos{
-            margin:auto;
+            margin: map-get($productos, margin);
             font-size: 50px;
         }
     }
@@ -356,7 +351,7 @@
 @media (min-width: 481px) and (max-width: 991px){
     .sectionPzapatillaskitty{
         display: flex;
-        margin: auto;
+        margin: map-get($productos, margin);
         margin-top: 2vh;
         margin-bottom: 15vh;
     }

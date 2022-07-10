@@ -19,12 +19,15 @@ a{
     color: rgb(0, 0, 0);
 }
 
-@import "variables";
-@import "header";
-@import "footer";
-@import "inicio";
-@import "productos";
-@import "contactos";
-@import "ubicacion";
-@import "acercade";
-@import "scrollbar";
+@import "base/variables";
+@import "components/header";
+@import "components/footer";
+@import "components/inicio";
+@import "components/productos";
+@import "components/contactos";
+@import "components/ubicacion";
+@import "components/acercade";
+@import "base/scrollbar";
+@import "base/extends";
+@import "base/mapas";
+@import "base/mixin"

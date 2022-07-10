@@ -1,0 +1,9 @@
+@mixin animaciones($translate) {
+    transform: $translate;
+}
+
+@mixin galeria($ancho, $display, $justify) {
+    width: $ancho;
+    display: $display;
+    justify-content: $justify;
+}
