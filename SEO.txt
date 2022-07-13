@@ -1,0 +1,9 @@
+Sass2 + SEO:
+
+Agregue meta tags en los 5 html, incluyendo description y keywords.
+
+Agregue etiquetas Open Graphs, “og:title”, “og:description” y “og:image”.
+
+También agregue algunos “alt” a imágenes faltantes.
+
+Cambie algunos títulos de los html.
