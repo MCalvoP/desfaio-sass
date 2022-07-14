@@ -575,12 +575,6 @@ a {
     font-family: "Lato", sans-serif;
   }
 }
-@media (min-width: 1400px) and (max-width: 1920px) {
-  .container .card {
-    height: 450px;
-    margin-bottom: 15rem;
-  }
-}
 
 @media (min-width: 481px) and (max-width: 991px) {
   .container {
@@ -590,6 +584,11 @@ a {
 @media (max-width: 1024px) {
   .container {
     height: 100%;
+  }
+}
+@media (min-width: 1400px) and (max-width: 1920px) {
+  .container .card {
+    margin-bottom: 2rem;
   }
 }
 ::-webkit-scrollbar-track {
