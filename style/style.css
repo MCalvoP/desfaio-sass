@@ -586,8 +586,8 @@ a {
     height: 100%;
   }
 }
-@media (min-width: 1400px) and (max-width: 1920px) {
-  .container .card {
+@media (min-width: 1400px) {
+  #responsive {
     margin-bottom: 2rem;
   }
 }
