@@ -578,6 +578,7 @@ a {
 @media (min-width: 1400px) and (max-width: 1920px) {
   .container .card {
     height: 450px;
+    margin-bottom: 10rem;
   }
 }
 
