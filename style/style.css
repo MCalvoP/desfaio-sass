@@ -148,7 +148,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #585858;
 }
 
 @media (max-width: 480px) {
@@ -537,7 +537,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #585858;
 }
 
 .container {
@@ -615,7 +615,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #585858;
 }
 
 .container {
@@ -668,7 +668,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #585858;
 }
 
 .sectionInfo {
@@ -821,7 +821,7 @@ a {
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: rgb(0, 0, 0);
+  background-color: #585858;
 }
 
 .footer .pFooter {
