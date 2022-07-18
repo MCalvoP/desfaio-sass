@@ -126,6 +126,16 @@ a {
     display: flex;
   }
 }
+@media (min-width: 481px) and (max-width: 991px) {
+  .bienvenida .generalImageOne {
+    display: none;
+  }
+  .bienvenida .generalImageTwo {
+    opacity: 1;
+    height: 20rem;
+    display: flex;
+  }
+}
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
@@ -164,7 +174,7 @@ a {
   .sectionImagen {
     display: flex;
     justify-content: center;
-    height: 40vh;
+    height: 35vh;
   }
 }
 .productosSection {
@@ -311,7 +321,7 @@ a {
 }
 @media (min-width: 481px) and (max-width: 991px) {
   .galeria .remeraBlanca, .galeria .remeraKitty, .galeria .buzoKitty, .galeria .pantalonKitty, .galeria .zapatillasKitty {
-    height: 70vh;
+    height: 60vh;
     position: absolute;
     margin: auto;
     box-shadow: 0 0 5px rgb(77, 77, 77);
@@ -347,7 +357,7 @@ a {
 }
 @media (min-width: 481px) and (max-width: 991px) {
   .galeria .remeraBlancaTrasera, .galeria .remeraKittyTrasera, .galeria .buzoKittyTrasera, .galeria .pantalonKittyTrasera, .galeria .zapatillasKittyTrasera {
-    height: 70vh;
+    height: 60vh;
     position: relative;
     margin: auto;
     box-shadow: 0 0 5px rgb(77, 77, 77);
@@ -395,6 +405,9 @@ a {
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 .sectionPproductos {
@@ -694,6 +707,9 @@ a {
 .sectionInfo .link {
   text-decoration: underline;
 }
+.sectionInfo a {
+  color: black;
+}
 
 @media (max-width: 480px) {
   .container {
@@ -709,7 +725,7 @@ a {
   .sectionInfo {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 93%;
     margin: auto;
     margin-left: 1rem;
     margin-bottom: 6rem;
@@ -728,6 +744,7 @@ a {
     margin-top: 2vh;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
+    text-align: justify;
   }
   .infoh2 {
     font-family: "Staatliches", cursive;
@@ -739,6 +756,58 @@ a {
     margin-top: 2vh;
     font-family: "Open Sans", sans-serif;
     font-size: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  .sectionInfo {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 5vh;
+    margin-bottom: 15vh;
+    position: relative;
+  }
+  .kittyCorazon {
+    display: none;
+  }
+}
+@media (min-width: 481px) and (max-width: 991px) {
+  .sectionInfo {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: 5vh;
+    margin-bottom: 15vh;
+    position: relative;
+  }
+  .sectionInfo .kittyCorazon {
+    position: absolute;
+    left: 110%;
+    top: 15%;
+    width: 60vh;
+  }
+  .sectionInfo .info {
+    font-family: "Staatliches", cursive;
+    font-weight: 550;
+    font-size: 40px;
+  }
+  .sectionInfo .infoP {
+    margin-top: 2vh;
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+  }
+  .sectionInfo .infoh2 {
+    font-family: "Staatliches", cursive;
+    margin-top: 3vh;
+    font-weight: 550;
+  }
+  .sectionInfo .infoh3 {
+    margin-top: 2vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: large;
+  }
+  .sectionInfo .link {
+    text-decoration: underline;
   }
 }
 ::-webkit-scrollbar-track {

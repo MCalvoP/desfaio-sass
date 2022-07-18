@@ -26,7 +26,7 @@
     .sectionImagen{
         display: flex;
         justify-content: center;
-        height: 40vh;
+        height: 35vh;
     }
 }
 
@@ -171,7 +171,7 @@
     }
     @media (min-width: 481px) and (max-width: 991px){
         .remeraBlanca, .remeraKitty, .buzoKitty, .pantalonKitty, .zapatillasKitty{
-            height: map-get($productos, altura);
+            height: 60vh;
             position: absolute;
             margin: map-get($productos, margin);
             box-shadow: 0 0 5px $bs-color;
@@ -207,7 +207,7 @@
     }
     @media (min-width: 481px) and (max-width: 991px){
         .remeraBlancaTrasera, .remeraKittyTrasera, .buzoKittyTrasera, .pantalonKittyTrasera, .zapatillasKittyTrasera{
-            height: map-get($productos, altura);
+            height: 60vh;
             position: relative;
             margin: map-get($productos, margin);
             box-shadow: 0 0 5px $bs-color;
@@ -251,6 +251,9 @@
 @media (min-width: 481px) and (max-width: 991px){
 .galeria{
     @include galeria (100%, flex, center)
+}
+body{
+    overflow-x:hidden;
 }
 }
 

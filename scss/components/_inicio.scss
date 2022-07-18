@@ -18,6 +18,16 @@
             display: flex;
         }
     }
+    @media (min-width: 481px) and (max-width: 991px){
+        .generalImageOne{
+            display: none;
+        }
+        .generalImageTwo{
+            opacity: 1;
+            height: 20rem;
+            display: flex;
+        }
+    }
 }
 
 
